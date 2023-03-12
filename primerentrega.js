@@ -18,21 +18,21 @@ let mensaje = prompt ("¿Desea realizar una compra? (S-SI / N-NO)");
         let producto = prompt("1-Galletitas Trio \n2- Tostadas Riera \n3- Pepas Terepín");
                                     if (producto == "1")    
                                     {  
-                                    alert("Galletitas Trio ---- $3000 + IVA agregado a su carro");
+                                    alert("Galletitas Trio ---- $3000 + IVA por caja");
                                     let cantidad = prompt ("¿Cuantas cajas desea comprar?");
                                     acumulador= acumulador+(trio * cantidad);
                                     }
                                     else if (producto == "2")
                                     
                                     {
-                                    alert("Tostadas Riera ---- $4000 + IVA agregado a su carro");
+                                    alert("Tostadas Riera ---- $4000 + IVA por caja");
                                     let cantidad = prompt ("¿Cuantas cajas desea comprar?");
                                     acumulador= acumulador+(riera * cantidad);                   
                                     }
 
                                     else if (producto == "3")
                                     {
-                                    alert("Pepas Terepín ---- $2000 + IVA agregado a su carro");
+                                    alert("Pepas Terepín ---- $2000 + IVA por caja");
                                     let cantidad = prompt ("¿Cuantas cajas desea comprar?");
                                     acumulador= acumulador+(terepin * cantidad);
                                     }
@@ -47,6 +47,6 @@ let mensaje = prompt ("¿Desea realizar una compra? (S-SI / N-NO)");
 function calcularTotalConIva (totalCompra)
 {
     let totalConIva = acumulador *1.21;
-    alert ("El precio final de su compra es" + " $" +  totalConIva + " " + "Gracias por su compra!!");
+    alert ("El precio final de su compra es" + " $" +  totalConIva + " " + "Gracias por su elegirnos!!");
 }
 calcularTotalConIva();
