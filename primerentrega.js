@@ -19,18 +19,22 @@ let mensaje = prompt ("¿Desea realizar una compra? (S-SI / N-NO)");
                                     if (producto == "1")    
                                     {  
                                     alert("Galletitas Trio ---- $3000 + IVA agregado a su carro");
-                                    acumulador= acumulador+trio;
+                                    let cantidad = prompt ("¿Cuantas cajas desea comprar?");
+                                    acumulador= acumulador+(trio * cantidad);
                                     }
                                     else if (producto == "2")
                                     
                                     {
                                     alert("Tostadas Riera ---- $4000 + IVA agregado a su carro");
-                                    acumulador= acumulador + riera;
+                                    let cantidad = prompt ("¿Cuantas cajas desea comprar?");
+                                    acumulador= acumulador+(riera * cantidad);                   
                                     }
+
                                     else if (producto == "3")
                                     {
                                     alert("Pepas Terepín ---- $2000 + IVA agregado a su carro");
-                                    acumulador= acumulador + terepin;
+                                    let cantidad = prompt ("¿Cuantas cajas desea comprar?");
+                                    acumulador= acumulador+(terepin * cantidad);
                                     }
                                     else 
                                     {
